@@ -1,6 +1,5 @@
 Given two graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$, the Graph Isomorphism (GI) problem conjectures:
-> Does there exist a bijection $\phi: V_1 \rightarrow V_2$ such that  
-> $\{u, v\} \in E_1 \iff \{\phi(u), \phi(v)\} \in E_2$?
+> Does there exist a bijection $\phi: V_1 \rightarrow V_2$ such that $\{u, v\} \in E_1 \iff \{\phi(u), \phi(v)\} \in E_2$?
 
 GI is considered to be  in NP but not known to be NP-complete or in P. Babai's breakthrough in 2015 established a quasipolynomial-time algorithm:
 
@@ -20,13 +19,13 @@ Each round of the GMW protocol follows this pattern:
 ### Completeness
 When the prover actually knows $\pi$, they can correctly respond to either challenge. This implies that, an honest verifier will always accept:
 
-$$\Pr[\text{Verifier accepts} \mid \text{honest prover}] = 1$$
+$$\ \mathbb{P}[\text{Verifier accepts} \mid \text{honest prover}] = 1$$
 
 ### Soundness
 Without knowledge of $\pi$, the prover can only prepare for one challenge type - not both.  
 Therefore, the probability of successful deception in a single round is at most $\frac{1}{2}$. Across $t$ rounds:
 
-$$\Pr[\text{Cheating prover succeeds in all rounds}] \leq \left(\frac{1}{2}\right)^t$$
+$$\ \mathbb{P}text{Cheating prover succeeds in all rounds}] \leq \left(\frac{1}{2}\right)^t$$
 
 For example:  
 Using $t = 10$ rounds produces a soundness error no greater than $\frac{1}{1024}$
