@@ -3,7 +3,7 @@ Given two graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$, the Graph Isomorphis
 
 GI is considered to be  in NP but not known to be NP-complete or in P. Babai's breakthrough in 2015 established a quasipolynomial-time algorithm:
 
-$$\text{Time complexity: } n^{O(\log^c n)} \text{ for some constant } c$$
+$$\text{Time complexity: } n^{\mathcal{O}(\log^c n)} \text{ for some constant } c \in$$
 
 ---
 
