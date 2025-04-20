@@ -1,5 +1,4 @@
 // zk_graph_isomorphism.cpp
-// Advanced C++ ZKP Visual + GUI + Report Version (T3)
 
 #include <iostream>
 #include <vector>
