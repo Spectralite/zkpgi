@@ -19,13 +19,13 @@ Each round of the GMW protocol follows this pattern:
 ### Completeness
 When the prover actually knows $\pi$, they can correctly respond to either challenge. This implies that, an honest verifier will always accept:
 
-$$\ \mathbb{P}[\text{Verifier accepts} \mid \text{honest prover}] = 1$$
+$$\ \mathbb{P}$$ [\text{Verifier accepts} \mid \text{honest prover}] = 1$$
 
 ### Soundness
 Without knowledge of $\pi$, the prover can only prepare for one challenge type - not both.  
 Therefore, the probability of successful deception in a single round is at most $\frac{1}{2}$. Across $t$ rounds:
 
-$$\ \mathbb{P}text{Cheating prover succeeds in all rounds}] \leq \left(\frac{1}{2}\right)^t$$
+$ \mathbb{P}$ $$\text{Cheating prover succeeds in all rounds}] \leq \left(\frac{1}{2}\right)^t$$
 
 For example:  
 Using $t = 10$ rounds produces a soundness error no greater than $\frac{1}{1024}$
@@ -41,7 +41,7 @@ Since the simulator requires no knowledge of the actual isomorphism, this satisf
 ### Fiat-Shamir Heuristic (Non-Interactive)
 To eliminate interaction requirements, the verifier's challenge can be substituted for with:
 
-$$b = \text{SHA-256}(\text{commitment} \parallel \text{round index}) \bmod 2$$
+$$b = \text{SHA-256}(\text{commitment} \parallel \text{round index}) \pmod 2$$
 
 This approach makes the proof independently verifiable offline, assuming the hash function behaves as a random oracle.
 
